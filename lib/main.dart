@@ -142,11 +142,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               width: double.infinity,
               height: 160,
-              padding: EdgeInsets.symmetric(horizontal: 22),
               child: Stack(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.only(left: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 22),
                     child: Text(
                       "Speakers",
                       style: speakerTitleStyle,
@@ -155,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Padding(
-                      padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                      padding: EdgeInsets.only(left: 22, right: 22, bottom: 10),
                       child: Container(
                         width: double.infinity,
                         height: 100,
@@ -192,8 +191,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     right: 15,
                     top: -5,
                     child: Image.asset(
-                      "assets/product_01.webp",
-                      fit: BoxFit.cover,
+                      "assets/speaker_01.webp",
+                      fit: BoxFit.contain,
                       width: 150,
                       height: 160,
                     ),
@@ -205,7 +204,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.only(bottom: 12),
+        padding: EdgeInsets.only(left: 12, bottom: 12, right: 12),
         child: BubbleBottomBar(
           backgroundColor: Colors.transparent,
           opacity: 1,

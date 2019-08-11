@@ -48,6 +48,7 @@ flutter:
     - assets/product_03.webp
     - assets/product_04.webp
     - assets/product_05.webp
+    - assets/speaker_01.webp
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
